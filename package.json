@@ -1,12 +1,16 @@
 {
+  "homepage": "https://Adarshsengar1431.github.io/Adarsh-portfolio",
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@emailjs/react-native": "^4.2.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "babel": "^6.23.0",
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
@@ -32,6 +36,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": " npm run build",
+    "deploy": "gh-pages -d build",
     "run": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",

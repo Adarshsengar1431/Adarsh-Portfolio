@@ -14,7 +14,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [ "Full Stack Developer", "UI/UX Designer" ];
-  const period = 2000;
+  const period = 1000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -58,12 +58,12 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Adarsh S Sengar`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>As a recent graduate with a [B.Tech Degree] in [Computer Science and Engineering], I Bring a fresher perspective and a solid foundation in [JAVA, SQL, WEB TECHNOLOGY].
-                    I am seeking an entry-level position in [Information and Technology] where I can apply my skills, contribute effectively, and grow professionally while embracing new challenges and opportunities.
+                <h1>{`Hi! I'm Adarsh S Sengar`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer" "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Aspiring Software Engineer With a Strong Foundation in Programming and Problem-Solving Skills, I Bring a Fresher Perspective and a Solid Foundation in [JAVA, SQL, WEB TECHNOLOGY] & Frame-Works[React JS & Node JS]
+                    I am Seeking an Entry-Level Position in [Information & Technology] Where I Can Apply My Skills, Contribute Effectively, and Grow Professionally While Embracing New Challenges and Opportunities.
 
                   </p>
-                  <button onClick={() => window.location.href = 'mailto:Adarshsingh.as830@gmail.com'}>Hire Me <ArrowRightCircle size={25} /></button>
+                  <button onClick={() => window.location.href = 'mailto:Adarshsingh.as830@gmail.com'}> Hire Me <ArrowRightCircle size={25} /></button>
                   
               </div>}
             </TrackVisibility>
@@ -73,7 +73,7 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   {/* my main image */}
-                  { <img src={headerImg} alt="Header Img"/> }
+                  {/* { <img src={headerImg} alt="Header Img"/> } */}
                 </div>}
             </TrackVisibility>
           </Col>
