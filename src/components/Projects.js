@@ -15,17 +15,17 @@ export const Projects = () => {
   const projects = [
     {
       title: "Online Job Portal",
-      description: "HTML,CSS,JS,PHP",
+      description: "HTML,CSS,JS,PHP,SQL",
       imgUrl: projImg1,
     },
     {
       title: "Online Blood Bank Management System",
-      description: "HTML,CSS,JS,PHP",
+      description: "HTML,CSS,JS,PHP,SQL",
       imgUrl: projImg2,
     },
     {
       title: "Portfolio",
-      description: "React JS, Node JS, Tailwind CSS",
+      description: "React JS, Node JS",
       imgUrl: projImg3,
     },
   ];
@@ -73,14 +73,14 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                       
 
-                      <p>hello</p>
+                      <p>Hello My Name Is Adarsh S Sengar</p>
 
                     
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
 
 
-                      <p>hello</p>
+                      <p>Hello My Name Is Adarsh S Sengar</p>
                       
 
                     </Tab.Pane>
