@@ -1,1 +1,5 @@
 node_modules
+# git add .
+# git status
+# git commit -m "Describe the changes made"
+# git push
