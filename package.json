@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Adarshsengar1431.github.io/Adarsh-portfolio",
+  "homepage": "https://Adarshsengar1431.github.io/Adarsh-Portfolio",
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,7 @@
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "expo": "^51.0.21",
+    "expo": "^51.0.26",
     "express": "^4.19.2",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.1",
@@ -32,7 +32,8 @@
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-native": "0.74.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,7 +42,9 @@
     "run": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "eslintConfig": {
     "extends": [
@@ -62,6 +65,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.2.0"
   }
 }

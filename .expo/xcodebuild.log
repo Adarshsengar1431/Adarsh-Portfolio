@@ -1,0 +1,6 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "/Users/adarshsingh/Downloads/portfolio reactjs/ios/personalportfolio.xcodeproj" -configuration Debug -scheme personalportfolio -destination id=DD284D39-AAF3-4387-8F72-5D61D8D95867
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+

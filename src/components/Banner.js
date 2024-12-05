@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import headerImg from "../assets/img/header-img.svg";
-import headerImg from "../assets/img/header-img1234.png";
+// import headerImg from "../assets/img/header-img1234.png";
 
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
