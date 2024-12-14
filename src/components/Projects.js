@@ -1,10 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img222.png";
+import projImg1 from "../assets/img/project-img1110.jpg";
 // import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img222.png";
 // import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img222.png";
+import projImg3 from "../assets/img/project-img111.png";
 // import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -15,18 +15,21 @@ export const Projects = () => {
   const projects = [
     {
       title: "Online Job Portal",
-      description: "HTML,CSS,JS,PHP,SQL",
+      description: "React JS+Vite, Tailwind CSS, Node JS, Firebase",
       imgUrl: projImg1,
+      projectLink: "https://github.com/Adarshsengar1431/online-job-portal",
     },
     {
       title: "Online Blood Bank Management System",
-      description: "HTML,CSS,JS,PHP,SQL",
+      description: "HTML, CSS, JS, SQL",
       imgUrl: projImg2,
+      projectLink: "https://github.com/Adarshsengar1431/Blood-bank",
     },
     {
       title: "Portfolio",
-      description: "React JS, Node JS",
+      description: "React JS, Bootstrap, Node JS",
       imgUrl: projImg3,
+      projectLink: "https://github.com/Adarshsengar1431/Adarsh-Portfolio",
     },
   ];
 
