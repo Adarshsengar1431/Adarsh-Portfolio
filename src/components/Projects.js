@@ -44,7 +44,7 @@ export const Projects = () => {
                 <h2>Projects</h2>
                 <p>
                   Creating Seamless Web Experiences, Building Robust Applications and Transforming User Experience:
-                   Full Stack Development and Innovative UI/UX Design<br/>
+                   Full Stack Java Development and Innovative UI/UX Design<br/>
                   </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
