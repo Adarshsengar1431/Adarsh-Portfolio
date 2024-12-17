@@ -228,6 +228,7 @@ export const Contact = () => {
                           type="tel"
                           value={formDetails.phone}
                           placeholder="Phone"
+                          maxLength={13}
                           onChange={(e) => onFormUpdate('phone', e.target.value)}
                         />
                       </Col>

@@ -17,9 +17,10 @@ export const Footer = () => {
           <Col size={12} sm={25} className="text-center text-sm-end">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/adarsh-singh-sengar-894b54188/"><img src={navIcon1} alt="Icon" /></a>
+              <a href="https://github.com/Adarshsengar1431"><img src={navIcon4} alt="" /></a>
               <a href="https://www.facebook.com/adarshsinghrajput.samarth/"><img src={navIcon2} alt="Icon" /></a>
               <a href="https://www.instagram.com/adarshsingh_1431/"><img src={navIcon3} alt="Icon" /></a>
-              <a href="https://github.com/Adarshsengar1431"><img src={navIcon4} alt="" /></a>
+              
             </div>
             <p>Copyright.All Rights Reserved To Adarsh S Sengar</p>
           </Col>
