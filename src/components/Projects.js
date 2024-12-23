@@ -29,7 +29,7 @@ export const Projects = () => {
       title: "IMDB Clone Master",
       description: "React JS, Node JS, Tailwind CSS",
       imgUrl: projImg3,
-      projectLink: "https://github.com/Adarshsengar1431/Adarsh-Portfolio",
+      projectLink: "https://github.com/Adarshsengar1431/IMDBCLONE-master",
     },
   ];
 
@@ -43,7 +43,7 @@ export const Projects = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
                 <p>
-                  Creating Seamless Web Experiences, Building Robust Applications and Transforming User Experience:
+                  Creating Seamless Web Experiences, Building Robust Solutions and Transformative Design🚀:
                    Full Stack Development and Innovative UI/UX Design<br/>
                   </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
