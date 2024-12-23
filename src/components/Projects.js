@@ -75,10 +75,9 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       
-
                       <p>Hello My Name Is Adarsh S Sengar</p>
+                      
 
-                    
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
 
