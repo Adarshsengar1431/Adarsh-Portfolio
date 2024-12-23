@@ -4,7 +4,7 @@ import projImg1 from "../assets/img/project-img1110.jpg";
 // import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img222.png";
 // import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img111.png";
+import projImg3 from "../assets/img/project-img-111.gif";
 // import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -26,8 +26,8 @@ export const Projects = () => {
       projectLink: "https://github.com/Adarshsengar1431/Blood-bank",
     },
     {
-      title: "Portfolio",
-      description: "React JS, Bootstrap, Node JS",
+      title: "IMDB Clone Master",
+      description: "React JS, Node JS, Tailwind CSS",
       imgUrl: projImg3,
       projectLink: "https://github.com/Adarshsengar1431/Adarsh-Portfolio",
     },
