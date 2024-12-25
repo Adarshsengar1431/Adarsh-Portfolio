@@ -1,11 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1110.jpg";
-// import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img222.png";
-// import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img-111.gif";
-// import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/project-img1.jpg";
+import projImg2 from "../assets/img/project-img2.png";
+import projImg3 from "../assets/img/project-img-3.gif";
+import projImg4 from "../assets/img/project-img-4.png"
+import projImg5 from '../assets/img/project-img-5.png'
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -30,6 +29,18 @@ export const Projects = () => {
       description: "React JS, Node JS, Tailwind CSS",
       imgUrl: projImg3,
       projectLink: "https://github.com/Adarshsengar1431/IMDBCLONE-master",
+    },
+    {
+      title: "Search GitHub Profile",
+      description: "HTML, CSS, JS",
+      imgUrl: projImg4,
+      projectLink: "https://github.com/Adarshsengar1431/Search-Github-Profile",
+    },
+    {
+      title: "Password Generator",
+      description: "HTML, CSS, JS",
+      imgUrl: projImg5,
+      projectLink: "https://github.com/Adarshsengar1431/Password-Generator?tab=readme-ov-file",
     },
   ];
 
