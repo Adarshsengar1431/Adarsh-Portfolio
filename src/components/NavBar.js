@@ -38,10 +38,11 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-           
-            <img src={logo} alt="Logo" />
 
+            <img src={logo} alt="Logo" />  {/* Main Brand Logo */}
+            
           </Navbar.Brand>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
@@ -56,8 +57,7 @@ export const NavBar = () => {
                 <a href="https://www.linkedin.com/in/adarsh-singh-sengar-894b54188/"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/Adarshsengar1431"><img src={navIcon4} alt="" /></a>
                 <a href="https://www.facebook.com/adarshsinghrajput.samarth/"><img src={navIcon2} alt="" /></a>
-                <a href="https://www.instagram.com/adarshsingh_1431/"><img src={navIcon3} alt="" /></a>
-                
+                <a href="https://www.instagram.com/adarshsingh_1431/"><img src={navIcon3} alt="" /></a>                
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

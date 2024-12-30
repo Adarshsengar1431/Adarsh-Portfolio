@@ -1,6 +1,0 @@
-2024-12-05 16:52:42.921 xcodebuild[7574:202813] Writing error result bundle to /var/folders/lt/pnm0l1jn46gbb5r89df4r98c0000gn/T/ResultBundle_2024-05-12_16-52-0042.xcresult
-xcodebuild: error: Unable to find a destination matching the provided destination specifier:
-		{ id:DD284D39-AAF3-4387-8F72-5D61D8D95867 }
-
-	Ineligible destinations for the "personalportfolio" scheme:
-		{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device, error:iOS 18.1 is not installed. To use with Xcode, first download and install the platform }
