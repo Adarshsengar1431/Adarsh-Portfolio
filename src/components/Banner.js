@@ -59,12 +59,10 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Adarsh S Sengar`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer" "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Aspiring Software Engineer With a Strong Foundation in Programming and Problem-Solving Skills, I Bring a Fresher Perspective and a Solid Foundation in [JAVA, SQL, WEB TECHNOLOGY] & Frame-Works[React JS & Node JS]
-                    I am Seeking an Entry-Level Position in [Information & Technology] Where I Can Apply My Skills, Contribute Effectively, and Grow Professionally While Embracing New Challenges and Opportunities.
-
+                  <p>Aspiring Full Stack Developer with a strong foundation in[Java, Python, Javascript] and hands-on experience in [React JS, React Native and FastAPI]
+                  I’m passionate about building scalable, user-focused applications and continuously improving through new challenges. With a fresher’s perspective and a problem-solving mindset, I aim to contribute effectively to innovative projects in the Information Technology domain while growing as a professional developer.
                   </p>
                   <button onClick={() => window.location.href = 'mailto:Adarshsingh.as830@gmail.com'}> Hire Me <ArrowRightCircle size={25} /></button>
-                  
               </div>}
             </TrackVisibility>
           </Col>

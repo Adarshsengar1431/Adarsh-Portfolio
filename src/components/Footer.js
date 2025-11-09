@@ -22,7 +22,7 @@ export const Footer = () => {
               <a href="https://www.instagram.com/adarshsingh_1431/"><img src={navIcon3} alt="Icon" /></a>
               
             </div>
-            <p>Copyright.All Rights Reserved To Adarsh S Sengar</p>
+            <p>Copyright.All Rights Reserved To Adarsh S Sengar 2025</p>
           </Col>
         </Row>
       </Container>

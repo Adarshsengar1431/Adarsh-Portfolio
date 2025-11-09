@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img-3.gif";
 import projImg4 from "../assets/img/project-img-4.png"
 import projImg5 from '../assets/img/project-img-5.png'
+import projImg6 from '../assets/img/project-img-6.png'
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -17,6 +18,12 @@ export const Projects = () => {
       description: "React JS+Vite, Tailwind CSS, Node JS, Firebase",
       imgUrl: projImg1,
       projectLink: "https://github.com/Adarshsengar1431/online-job-portal",
+    },
+    {
+      title: "Story Worm Book App",
+      description: "React Native + Expo Router, Mongo DB, Cloudinary, JWT tokens, Node.Js",
+      imgUrl: projImg6,
+      projectLink: "https://github.com/Adarshsengar1431/MERN-Storyworm-React-Native-Expo",
     },
     {
       title: "Online Blood Bank Management System",
