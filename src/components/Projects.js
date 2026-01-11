@@ -100,18 +100,82 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      
-                      <p>Hello My Name Is Adarsh S Sengar</p>
-                      
+  <div className="experience-section">
+    <h3>About Me</h3>
 
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
+    <div className="experience-card">
+      <p>
+        I’m <strong>Adarsh S Sengar</strong>, a passionate
+        <strong> Full Stack Developer</strong> with a strong interest in building
+        scalable, user-focused web and mobile applications.
+      </p>
 
+      <p>
+        I hold a <strong>B.Tech in Computer Science Engineering</strong> and have
+        hands-on experience with modern technologies such as
+        <strong> React.js, React Native, FastAPI, Node.js</strong>, along with
+        SQL and NoSQL databases.
+      </p>
 
-                      <p>Hello My Name Is Adarsh S Sengar</p>
-                      
+      <p>
+        I enjoy writing clean, maintainable code, improving UI/UX, and solving
+        real-world problems through technology. I’m comfortable working in
+        Agile environments and collaborating with cross-functional teams.
+      </p>
 
-                    </Tab.Pane>
+      <p>
+        Currently, I work as a <strong>Full Stack Developer</strong> on
+        enterprise-level applications, contributing across the full
+        development lifecycle—from design to deployment.
+      </p>
+    </div>
+  </div>
+</Tab.Pane>
+
+<Tab.Pane eventKey="third">
+  <div className="experience-section">
+    <h3>Professional Experience</h3>
+
+    <div className="experience-card">
+      <h4>Full Stack Developer</h4>
+      <h5>
+        Web Synergies · Client: Schreiber Foods
+        <span className="experience-duration"> (May 2025 – Present)</span>
+      </h5>
+
+      <ul>
+        <li>
+          Developed and optimized scalable <strong>React.js</strong> components
+          integrated with <strong>FastAPI</strong>, delivering production-ready
+          features across multiple business modules.
+        </li>
+        <li>
+          Enhanced UI/UX across 50+ pages by implementing loaders, responsive
+          layouts, and Material Design standards based on Figma designs.
+        </li>
+        <li>
+          Built and enhanced Freight Management System (FMS) features including
+          drawer forms, DataGrids, filters, approval workflows, and
+          auto-calculation logic.
+        </li>
+        <li>
+          Implemented role-based authentication (RBAC), improved API performance,
+          and strengthened error handling for stable releases.
+        </li>
+        <li>
+          Collaborated in Agile sprints using <strong>GitHub, Jira, and CI/CD
+          pipelines</strong>, supporting QA/UAT and multi-environment deployments.
+        </li>
+      </ul>
+
+      <p className="tech-stack">
+        <strong>Tech Stack:</strong> React.js, FastAPI, Node.js, PostgreSQL,
+        AWS (S3, EC2, Lambda), Material UI, GitHub, Jira
+      </p>
+    </div>
+  </div>
+</Tab.Pane>
+
                   </Tab.Content>
                 </Tab.Container>
               </div>}

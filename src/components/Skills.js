@@ -67,6 +67,14 @@ export const Skills = () => {
                                 <img src={meter2} alt="" />
                                 <h5>My SQL</h5>
                             </div>
+                            <div className="item">
+                                <img src={meter5} alt="" />
+                                <h5>PostgreSQL</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="" />
+                                <h5>AWS (S3, EC2, Lambda)</h5>
+                            </div>
 
                         </Carousel>
                     </div>

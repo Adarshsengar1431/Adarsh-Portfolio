@@ -634,3 +634,50 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 25px;
 }
+
+.experience-section {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.experience-section h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 22px;
+  border-radius: 14px;
+}
+
+.experience-card p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #d1d1d1;
+  margin-bottom: 15px;
+}
+
+.experience-card ul {
+  margin-top: 15px;
+}
+
+.experience-card li {
+  margin-bottom: 10px;
+}
+
+.experience-card strong {
+  color: #ffffff;
+}
+
+.experience-duration {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.tech-stack {
+  margin-top: 15px;
+  font-style: italic;
+  color: #ddd;
+}
