@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/project-img-3.gif";
 import projImg4 from "../assets/img/project-img-4.png"
 import projImg5 from '../assets/img/project-img-5.png'
 import projImg6 from '../assets/img/project-img-6.png'
+import projImg7 from '../assets/img/project-img-7.gif'
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -13,17 +14,24 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const projects = [
-    {
-      title: "Online Job Portal",
-      description: "React JS+Vite, Tailwind CSS, Node JS, Firebase",
-      imgUrl: projImg1,
-      projectLink: "https://github.com/Adarshsengar1431/online-job-portal",
-    },
+
     {
       title: "Story Worm Book App",
       description: "React Native + Expo Router, Mongo DB, Cloudinary, JWT tokens, Node.Js",
       imgUrl: projImg6,
       projectLink: "https://github.com/Adarshsengar1431/MERN-Storyworm-React-Native-Expo",
+    },
+    {
+      title: "Swiggy Clone",
+      description: "React JS, Tailwind CSS, Node JS, Express JS",
+      imgUrl: projImg7,
+      projectLink: "https://github.com/Adarshsengar1431/Swiggy-Clone",
+    },
+    {
+      title: "Online Job Portal",
+      description: "React JS+Vite, Tailwind CSS, Node JS, Firebase",
+      imgUrl: projImg1,
+      projectLink: "https://github.com/Adarshsengar1431/online-job-portal",
     },
     {
       title: "Online Blood Bank Management System",
