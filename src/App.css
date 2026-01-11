@@ -681,3 +681,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-style: italic;
   color: #ddd;
 }
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 22px;
+  border-radius: 14px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+  will-change: transform;
+}
+
+/* Hover Effect */
+.experience-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
