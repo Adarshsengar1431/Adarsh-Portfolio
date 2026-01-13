@@ -303,6 +303,65 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+/* Cursor (always visible) */
+.txt-rotate > .wrap {
+  border-right: 0.08em solid rgba(255, 255, 255, 0.6);
+}
+
+/* FULL STACK – NEON TECH */
+.wrap.role-fullstack:not(:empty) {
+  background: linear-gradient(90deg, #00fff0, #00c8ff);
+  background-clip: text;                /* ✅ Standard property */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* UI/UX – UI / DESIGN */
+.wrap.role-uiux:not(:empty) {
+  background: linear-gradient(90deg, #c084fc, #ec4899);
+  background-clip: text;                /* ✅ Standard property */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =====================================
+   Hire Me Button – Same as Tagline Style
+   ===================================== */
+
+   .banner button {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    padding: 14px 30px;
+    border-radius: 6px;
+    color: #ffffff;
+    background: linear-gradient(
+      90.21deg,
+      rgba(170, 54, 124, 0.9) -5.91%,
+      rgba(74, 47, 189, 0.9) 111.58%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  /* Icon animation (kept subtle) */
+  .banner button svg {
+    transition: transform 0.25s ease;
+  }
+  
+  /* Hover effect – clean, not flashy */
+  .banner button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(170, 54, 124, 0.35);
+  }
+  
+  .banner button:hover svg {
+    transform: translateX(6px);
+  }  
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;

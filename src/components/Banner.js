@@ -58,7 +58,16 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Adarsh S Sengar`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer" "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Adarsh S Sengar`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer" "UI/UX Designer" ]'><span
+  className={`wrap ${
+    loopNum % toRotate.length === 0
+      ? "role-fullstack"
+      : "role-uiux"
+  }`}
+>
+  {text}
+</span>
+</span></h1>
                   <p>Aspiring Full Stack Developer with a strong foundation in[Java, Python, Javascript] and hands-on experience in [React JS, React Native and FastAPI]
                   I’m passionate about building scalable, user-focused applications and continuously improving through new challenges. With a fresher’s perspective and a problem-solving mindset, I aim to contribute effectively to innovative projects in the Information Technology domain while growing as a professional developer.
                   </p>
