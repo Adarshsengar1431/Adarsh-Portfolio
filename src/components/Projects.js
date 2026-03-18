@@ -3,21 +3,20 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.jpg";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img-3.gif";
-import projImg4 from "../assets/img/project-img-4.png"
-import projImg5 from '../assets/img/project-img-5.png'
-import projImg6 from '../assets/img/project-img-6.png'
-import projImg7 from '../assets/img/project-img-7.gif'
+import projImg4 from "../assets/img/project-img-4.png";
+import projImg5 from "../assets/img/project-img-5.png";
+import projImg6 from "../assets/img/project-img-6.png";
+import projImg7 from "../assets/img/project-img-7.gif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
 
   const projects = [
-
     {
       title: "Story Worm Book App",
-      description: "React Native + Expo Router, Mongo DB, Cloudinary, JWT tokens, Node.Js",
+      description: "React Native + Expo Router, MongoDB, Cloudinary, JWT, Node.js",
       imgUrl: projImg6,
       projectLink: "https://github.com/Adarshsengar1431/MERN-Storyworm-React-Native-Expo",
     },
@@ -29,7 +28,7 @@ export const Projects = () => {
     },
     {
       title: "Online Job Portal",
-      description: "React JS+Vite, Tailwind CSS, Node JS, Firebase",
+      description: "React JS + Vite, Tailwind CSS, Node JS, Firebase",
       imgUrl: projImg1,
       projectLink: "https://github.com/Adarshsengar1431/online-job-portal",
     },
@@ -40,7 +39,7 @@ export const Projects = () => {
       projectLink: "https://github.com/Adarshsengar1431/Blood-bank",
     },
     {
-      title: "IMDB Clone Master",
+      title: "IMDB Clone",
       description: "React JS, Node JS, Tailwind CSS",
       imgUrl: projImg3,
       projectLink: "https://github.com/Adarshsengar1431/IMDBCLONE-master",
@@ -55,7 +54,7 @@ export const Projects = () => {
       title: "Password Generator",
       description: "HTML, CSS, JS",
       imgUrl: projImg5,
-      projectLink: "https://github.com/Adarshsengar1431/Password-Generator?tab=readme-ov-file",
+      projectLink: "https://github.com/Adarshsengar1431/Password-Generator",
     },
   ];
 
@@ -63,127 +62,158 @@ export const Projects = () => {
     <section className="project" id="projects">
       <Container>
         <Row>
-          <Col size={12}>
+          <Col>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>
-                  Creating Seamless Web Experiences, Building Robust Solutions and Transformative Design🚀:
-                   Full Stack Development and Innovative UI/UX Design<br/>
+              {({ isVisible }) => (
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+
+                  <h2>Projects</h2>
+                  <p>
+                    Creating Seamless Web Experiences, Building Robust Solutions &
+                    Transformative Design 🚀
                   </p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-  <div className="experience-section">
-    <h3>About Me</h3>
 
-    <div className="experience-card">
-      <p>
-        I’m <strong>Adarsh S Sengar</strong>, a passionate
-        <strong> Full Stack Developer</strong> with a strong interest in building
-        scalable, user-focused web and mobile applications.
-      </p>
+                  <Tab.Container defaultActiveKey="first">
 
-      <p>
-        I hold a <strong>B.Tech in Computer Science Engineering</strong> and have
-        hands-on experience with modern technologies such as
-        <strong> React.js, React Native, FastAPI, Node.js</strong>, along with
-        SQL and NoSQL databases.
-      </p>
+                    <Nav variant="pills" className="justify-content-center mb-5">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Projects</Nav.Link>
+                      </Nav.Item>
 
-      <p>
-        I enjoy writing clean, maintainable code, improving UI/UX, and solving
-        real-world problems through technology. I’m comfortable working in
-        Agile environments and collaborating with cross-functional teams.
-      </p>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">About Me</Nav.Link>
+                      </Nav.Item>
 
-      <p>
-        Currently, I work as a <strong>Full Stack Developer</strong> on
-        enterprise-level applications, contributing across the full
-        development lifecycle—from design to deployment.
-      </p>
-    </div>
-  </div>
-</Tab.Pane>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">Experience</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
 
-<Tab.Pane eventKey="third">
-  <div className="experience-section">
-    <h3>Professional Experience</h3>
+                    <Tab.Content className={isVisible ? "animate__animated animate__slideInUp" : ""}>
 
-    <div className="experience-card">
-      <h4>Full Stack Developer</h4>
-      <h5>
-        Web Synergies · Client: Schreiber Foods
-        <span className="experience-duration"> (May 2025 – Present)</span>
-      </h5>
+                      {/* PROJECTS */}
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
+                      </Tab.Pane>
 
-      <ul>
-        <li>
-          Developed and optimized scalable <strong>React.js</strong> components
-          integrated with <strong>FastAPI</strong>, delivering production-ready
-          features across multiple business modules.
-        </li>
-        <li>
-          Enhanced UI/UX across 50+ pages by implementing loaders, responsive
-          layouts, and Material Design standards based on Figma designs.
-        </li>
-        <li>
-          Built and enhanced Freight Management System (FMS) features including
-          drawer forms, DataGrids, filters, approval workflows, and
-          auto-calculation logic.
-        </li>
-        <li>
-          Implemented role-based authentication (RBAC), improved API performance,
-          and strengthened error handling for stable releases.
-        </li>
-        <li>
-          Collaborated in Agile sprints using <strong>GitHub, Jira, and CI/CD
-          pipelines</strong>, supporting QA/UAT and multi-environment deployments.
-        </li>
-      </ul>
+                      {/* ABOUT */}
+                      <Tab.Pane eventKey="second">
+                        <div className="experience-card">
+                          <h3>About Me</h3>
 
-      <p className="tech-stack">
-        <strong>Tech Stack:</strong> React.js, FastAPI, Node.js, PostgreSQL,
-        AWS (S3, EC2, Lambda), Material UI, GitHub, Jira
-      </p>
-    </div>
-  </div>
-</Tab.Pane>
+                          <p>
+                            I’m <strong>Adarsh S Sengar</strong>, a passionate
+                            <strong> Full Stack Developer</strong> focused on building
+                            scalable web and mobile applications.
+                          </p>
 
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+                          <p>
+                            Skilled in <strong>React.js, React Native, FastAPI,
+                            Node.js</strong> and modern SQL/NoSQL databases.
+                            I enjoy solving real-world problems with clean,
+                            maintainable and high-performance code.
+                          </p>
+
+                          <p>
+                            Currently working on enterprise-level applications,
+                            contributing across the full software development lifecycle
+                            from UI design to deployment and production support.
+                          </p>
+                        </div>
+                      </Tab.Pane>
+
+                      {/* EXPERIENCE */}
+                      <Tab.Pane eventKey="third">
+                        <div className="experience-card">
+
+                          <h3>Professional Experience</h3>
+
+                          <h4>Full Stack Developer</h4>
+                          <h5>
+                            Web Synergies · Client: Schreiber Foods
+                            <span> (May 2025 – Present)</span>
+                          </h5>
+
+                          <p>
+                            <strong>Projects:</strong> Happy Farmer, Freight Invoice Management System (FMS)
+                          </p>
+
+                          <ul>
+                            <li>
+                              Designed and developed scalable enterprise-grade
+                              <strong> React.js </strong> applications integrated with
+                              <strong> FastAPI </strong> backend services delivering
+                              production-ready features across multiple business modules.
+                            </li>
+
+                            <li>
+                              Improved frontend performance and application stability by
+                              fixing rendering issues, eliminating redundant API calls and
+                              optimizing payload handling.
+                            </li>
+
+                            <li>
+                              Enhanced UI/UX across <strong>50+ screens</strong> by implementing
+                              centralized loaders, responsive layouts and pixel-perfect
+                              <strong> Material UI </strong> components based on Figma designs.
+                            </li>
+
+                            <li>
+                              Developed core modules for <strong>Freight Management System</strong>
+                              including dynamic CRUD workflows, drawer-based forms, intelligent
+                              filtering, approval pipelines and automated business rule validations.
+                            </li>
+
+                            <li>
+                              Built secure file upload workflows integrated with
+                              <strong> AWS S3 </strong> and developed containerized
+                              <strong> AWS Lambda </strong> functions using Docker for scalable
+                              backend processing.
+                            </li>
+
+                            <li>
+                              Implemented <strong>Role-Based Access Control (RBAC)</strong>,
+                              improved REST API performance and strengthened logging &
+                              error-handling strategies for stable production releases.
+                            </li>
+
+                            <li>
+                              Developed reusable React components, custom hooks,
+                              advanced search features and optimized DataGrid rendering
+                              to improve maintainability and development speed.
+                            </li>
+
+                            <li>
+                              Collaborated in <strong>Agile/Scrum</strong> sprints using
+                              GitHub & Jira, supported CI/CD releases and handled
+                              multi-environment deployments (Dev → QA → UAT → Production).
+                            </li>
+                          </ul>
+
+                          <p>
+                            <strong>Tech Stack:</strong> React.js, React Native,
+                            FastAPI, Node.js, PostgreSQL, MongoDB, AWS (S3, EC2, Lambda),
+                            Docker, Material UI, Tailwind CSS, GitHub, Jira, CI/CD
+                          </p>
+
+                        </div>
+                      </Tab.Pane>
+
+                    </Tab.Content>
+
+                  </Tab.Container>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+
+      <img className="background-image-right" src={colorSharp2} alt="" />
     </section>
-  )
-}
+  );
+};
