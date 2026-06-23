@@ -1,36 +1,35 @@
-import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
-import "animate.css";
-import TrackVisibility from "react-on-screen";
-import emailjs from "@emailjs/browser";
+import { useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import contactImg from '../assets/img/contact-img.svg';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
-
   const formInitialDetails = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: ""
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    message: '',
   };
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Send");
+  const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState(null);
 
   const onFormUpdate = (field, value) => {
-    setFormDetails(prev => ({
+    setFormDetails((prev) => ({
       ...prev,
-      [field]: value
+      [field]: value,
     }));
   };
 
   const validateForm = () => {
-    if (!formDetails.firstName.trim()) return "Name is required";
-    if (!formDetails.email.match(/^\S+@\S+\.\S+$/)) return "Valid email required";
-    if (formDetails.phone.length < 8) return "Valid phone required";
-    if (!formDetails.message.trim()) return "Message cannot be empty";
+    if (!formDetails.firstName.trim()) return 'Name is required';
+    if (!formDetails.email.match(/^\S+@\S+\.\S+$/)) return 'Valid email required';
+    if (formDetails.phone.length < 8) return 'Valid phone required';
+    if (!formDetails.message.trim()) return 'Message cannot be empty';
     return null;
   };
 
@@ -43,7 +42,7 @@ export const Contact = () => {
       return;
     }
 
-    setButtonText("Sending...");
+    setButtonText('Sending...');
 
     try {
       const templateParams = {
@@ -62,29 +61,27 @@ export const Contact = () => {
       );
 
       if (response.status === 200) {
-        setStatus({ success: true, message: "Message sent successfully 👍" });
+        setStatus({ success: true, message: 'Message sent successfully 👍' });
         setFormDetails(formInitialDetails);
       } else {
         throw new Error();
       }
-
     } catch (err) {
-      setStatus({ success: false, message: "Failed to send message. Try again." });
+      setStatus({ success: false, message: 'Failed to send message. Try again.' });
     }
 
-    setButtonText("Send");
+    setButtonText('Send');
   };
 
   return (
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-
           <Col md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <img
-                  className={isVisible ? "animate__animated animate__zoomIn" : ""}
+                  className={isVisible ? 'animate__animated animate__zoomIn' : ''}
                   src={contactImg}
                   alt="contact illustration"
                 />
@@ -95,18 +92,17 @@ export const Contact = () => {
           <Col md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
                   <h2>Contact Me</h2>
 
                   <form onSubmit={handleSubmit}>
                     <Row>
-
                       <Col sm={6} className="px-1">
                         <input
                           type="text"
                           placeholder="First Name"
                           value={formDetails.firstName}
-                          onChange={(e) => onFormUpdate("firstName", e.target.value)}
+                          onChange={(e) => onFormUpdate('firstName', e.target.value)}
                         />
                       </Col>
 
@@ -115,7 +111,7 @@ export const Contact = () => {
                           type="text"
                           placeholder="Last Name"
                           value={formDetails.lastName}
-                          onChange={(e) => onFormUpdate("lastName", e.target.value)}
+                          onChange={(e) => onFormUpdate('lastName', e.target.value)}
                         />
                       </Col>
 
@@ -124,7 +120,7 @@ export const Contact = () => {
                           type="email"
                           placeholder="Email"
                           value={formDetails.email}
-                          onChange={(e) => onFormUpdate("email", e.target.value)}
+                          onChange={(e) => onFormUpdate('email', e.target.value)}
                         />
                       </Col>
 
@@ -134,7 +130,7 @@ export const Contact = () => {
                           placeholder="Phone"
                           maxLength={13}
                           value={formDetails.phone}
-                          onChange={(e) => onFormUpdate("phone", e.target.value)}
+                          onChange={(e) => onFormUpdate('phone', e.target.value)}
                         />
                       </Col>
 
@@ -143,28 +139,24 @@ export const Contact = () => {
                           rows="6"
                           placeholder="Message"
                           value={formDetails.message}
-                          onChange={(e) => onFormUpdate("message", e.target.value)}
+                          onChange={(e) => onFormUpdate('message', e.target.value)}
                         />
-                        <button type="submit" disabled={buttonText !== "Send"}>
+                        <button type="submit" disabled={buttonText !== 'Send'}>
                           <span>{buttonText}</span>
                         </button>
                       </Col>
 
                       {status && (
                         <Col>
-                          <p className={status.success ? "success" : "danger"}>
-                            {status.message}
-                          </p>
+                          <p className={status.success ? 'success' : 'danger'}>{status.message}</p>
                         </Col>
                       )}
-
                     </Row>
                   </form>
                 </div>
               )}
             </TrackVisibility>
           </Col>
-
         </Row>
       </Container>
     </section>
